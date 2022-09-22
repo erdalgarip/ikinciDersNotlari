@@ -1,0 +1,56 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String mesaj = "Bugün hava çok güzel.";
+		String yeniMesaj = mesaj.substring(0, 3);
+		System.out.println(yeniMesaj);
+		System.out.println(sehirVar());
+		int sayilariTopla = toplaVeri(20, 25);
+		System.out.println(sayilariTopla);
+		int cokluSayilar = toplaCokluVeri(1, 2, 64, 45, 48, 95);
+		System.out.println(cokluSayilar);
+
+	}
+
+	public static void ekle() {
+
+		System.out.println("Eklendi");
+	}
+
+	public static void sil() {
+		System.out.println("Silindi");
+	}
+
+	public static void duzenle() {
+		System.out.println("Düzenlendi");
+
+	}
+
+	public static int topla() {
+
+		return 5;
+	}
+
+	public static int toplaVeri(int sayi1, int sayi2) {
+
+		return sayi1 + sayi2;
+	}
+
+	public static int toplaCokluVeri(int... sayikKumesi) {
+
+		int toplam = 0;
+		for (int yeniToplam : sayikKumesi) {
+			toplam += yeniToplam;
+		}
+
+		return toplam;
+
+	}
+
+	public static String sehirVar() {
+
+		return "Kocaeli";
+	}
+
+}
