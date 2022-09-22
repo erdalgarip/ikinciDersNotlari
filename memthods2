@@ -36,6 +36,8 @@ public class Main {
 
 		return sayi1 + sayi2;
 	}
+	
+	//Variable Arguments
 
 	public static int toplaCokluVeri(int... sayikKumesi) {
 
