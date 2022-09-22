@@ -3,13 +3,13 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		sayibulmaca();
-		sayibulmaca();
-		sayibulmaca();
-		sayibulmaca();
+		sayiBulmaca();
+		sayiBulmaca();
+		sayiBulmaca();
+		sayiBulmaca();
 	}
 
-	public static void sayibulmaca() {
+	public static void sayiBulmaca() {
 		int[] sayiDizisi = new int[] { 1, 4, 5, 88, 102, 58, 78, 96 };
 		int bulunacakSayi = 4;
 		Boolean sayiVarmi = false;
