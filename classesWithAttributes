@@ -1,0 +1,137 @@
+//Main
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+	
+	
+		Product product = new Product(12,"Merhaba","Aciklaam",2300,10,"resim.jpg");	
+		
+//		Product product = new Product();
+//		product.setId(1);
+//		product.setBaslik("Kurşun Kalem");
+//		product.setAciklama("Adel Kurşun Kalem");		
+//		product.setFiyat(12); 
+//		product.setStok(200);;
+//		product.setResimurl("resim.jpg");
+
+	
+	
+		
+		productManager ProductManager = new productManager();		
+		ProductManager.urunEkle(product);
+		ProductManager.urunDuzenle(product);
+		ProductManager.urunSil(product);
+		
+		
+		
+
+	}
+
+}
+
+
+//Product
+
+public class Product {
+
+	public Product(int id,String baslik,String aciklama,double fiyat ,int stok, String resimurl) {
+	
+		System.out.println("Eklendi");	
+		
+		this.id=id;
+		this.baslik=baslik;
+		this.aciklama=aciklama;
+		this.fiyat=fiyat;
+		this.stok=stok;
+		this.resimurl=resimurl;
+		
+		
+	}
+	
+	
+	private int id;
+	private String baslik;
+	private String aciklama;
+	private double fiyat;
+	private int stok;
+	private String resimurl;
+
+	private String kod;
+
+	public String getKod() {
+		return this.baslik.substring(0, 1) + this.id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getBaslik() {
+		return baslik;
+	}
+
+	public void setBaslik(String baslik) {
+		this.baslik = baslik;
+	}
+
+	public String getAciklama() {
+		return aciklama;
+	}
+
+	public void setAciklama(String aciklama) {
+		this.aciklama = aciklama;
+	}
+
+	public double getFiyat() {
+		return fiyat;
+	}
+
+	public void setFiyat(double fiyat) {
+		this.fiyat = fiyat;
+	}
+
+	public int getStok() {
+		return stok;
+	}
+
+	public void setStok(int stok) {
+		this.stok = stok;
+	}
+
+	public String getResimurl() {
+		return resimurl;
+	}
+
+	public void setResimurl(String resimurl) {
+		this.resimurl = resimurl;
+	}
+
+}
+
+
+
+//productManager
+
+public class productManager {
+	
+	
+public void urunEkle(Product product) {
+	
+System.out.println("Ürün Başarıyla Eklendi. Başlık : "+product.getBaslik()+ product.getKod());
+}
+
+public void urunSil(Product product) {
+	System.out.println("Ürün Başarıyla Silindi. Başlık : "+product.getBaslik()+ product.getKod());
+}
+
+public void urunDuzenle(Product product) {
+	System.out.println("Ürün Başarıyla Düzenlendi. Başlık : "+product.getBaslik()+" Ürün Kodu : "+ product.getKod());
+}	
+}
+
