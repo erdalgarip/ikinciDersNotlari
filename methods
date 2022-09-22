@@ -1,0 +1,47 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		sayibulmaca();
+		sayibulmaca();
+		sayibulmaca();
+		sayibulmaca();
+	}
+
+	public static void sayibulmaca() {
+		int[] sayiDizisi = new int[] { 1, 4, 5, 88, 102, 58, 78, 96 };
+		int bulunacakSayi = 4;
+		Boolean sayiVarmi = false;
+
+		for (int sayilar : sayiDizisi) {
+
+			if (bulunacakSayi == sayilar) {
+
+				sayiVarmi = true;
+
+			}
+		}
+
+		if (sayiVarmi == true) {
+			
+			mesajVer(" Sayi Dizininde Vardır !" + bulunacakSayi);
+			//System.out.println(" Sayi Dizininde Vardır !" + bulunacakSayi);
+
+		} else {
+			//System.out.println(" Sayi Dizininde Yoktur !" + bulunacakSayi);
+			
+			mesajVer(" Sayi Dizininde Yoktur !" + bulunacakSayi);
+		}
+	}
+	
+	public static void mesajVer(String mesaj) {
+		
+		System.out.println(mesaj);
+	}
+	
+	
+	
+	
+
+}
