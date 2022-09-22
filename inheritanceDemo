@@ -1,0 +1,94 @@
+//Main
+public class Main {
+
+	public static void main(String[] args) {
+
+		BaseKrediManager baseKrediManager = new BaseKrediManager();
+		OgretmenKrediManager ogretmenKrediManager = new OgretmenKrediManager();
+		TarimKrediManager tarimKrediManager = new TarimKrediManager();
+		KrediUI krediUI = new KrediUI();
+		// baseKrediManager.Hesapla();
+		// ogretmenKrediManager.Hesapla();
+		// tarimKrediManager.Hesapla();
+
+		krediUI.KrediHesapla(new OgretmenKrediManager());
+		krediUI.KrediHesapla(new TarimKrediManager());
+		krediUI.KrediHesapla(new BaseKrediManager());
+		krediUI.KrediHesapla(new AskerKredisiManager());
+
+	}
+
+}
+
+
+//AskerKredisiManager
+
+public class AskerKredisiManager extends BaseKrediManager {
+
+}
+
+
+
+//BaseKrediManager
+
+public class BaseKrediManager {
+
+	public void Hesapla() {
+
+		System.out.println("Kredi Hesaplandı");
+	}
+
+}
+
+
+
+//KrediUI
+public class KrediUI {
+	
+	
+	public void KrediHesapla(BaseKrediManager baseKrediManager) {
+		baseKrediManager.Hesapla();
+	}
+
+}
+
+//Main
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		BaseKrediManager baseKrediManager = new BaseKrediManager();
+		OgretmenKrediManager ogretmenKrediManager = new OgretmenKrediManager();
+		TarimKrediManager tarimKrediManager = new TarimKrediManager();
+		KrediUI krediUI = new KrediUI();
+		// baseKrediManager.Hesapla();
+		// ogretmenKrediManager.Hesapla();
+		// tarimKrediManager.Hesapla();
+
+		krediUI.KrediHesapla(new OgretmenKrediManager());
+		krediUI.KrediHesapla(new TarimKrediManager());
+		krediUI.KrediHesapla(new BaseKrediManager());
+		krediUI.KrediHesapla(new AskerKredisiManager());
+
+	}
+
+}
+
+
+//BaseKrediManager
+public class OgretmenKrediManager extends BaseKrediManager {
+
+}
+
+
+//TarimKrediManager
+public class TarimKrediManager extends BaseKrediManager {
+
+}
+
+
+
+
+
+
