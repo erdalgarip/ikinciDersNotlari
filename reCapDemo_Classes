@@ -1,0 +1,58 @@
+//DortIslem
+
+public class DortIslem {
+
+	public int  toplama(int sayi1, int sayi2) {
+		return sayi1 + sayi2;
+	}
+	
+	
+	public int  cikarma(int sayi1, int sayi2) {
+		return sayi1 - sayi2;
+	}
+	
+	public int  bolme(int sayi1, int sayi2) {
+		return sayi1 / sayi2;
+	}
+	
+	public int  carpma(int sayi1, int sayi2) {
+		return sayi1 * sayi2;
+	}
+	
+
+
+	
+
+}
+
+
+//Main
+public class Main {
+
+	public static void main(String[] args) {
+//tektekislem
+		int sayi1 = 27;
+		int sayi2 = 9;		
+		
+		DortIslem dortIslem = new DortIslem();
+		int ikiSayiyiCikar;
+		ikiSayiyiCikar = dortIslem.cikarma(sayi1, sayi2);
+		System.out.println(ikiSayiyiCikar);
+
+		int ikiSayiyiTopla;
+		ikiSayiyiTopla = dortIslem.toplama(sayi1, sayi2);
+		System.out.println(ikiSayiyiTopla);
+		
+
+		int ikiSayiyiBolme;
+		ikiSayiyiBolme = dortIslem.bolme(sayi1, sayi2);
+		System.out.println(ikiSayiyiBolme);
+
+		int ikiSayiyiCarpma;
+		ikiSayiyiCarpma = dortIslem.carpma(sayi1,sayi2);
+		System.out.println(ikiSayiyiCarpma);
+		
+	}
+
+}
+
